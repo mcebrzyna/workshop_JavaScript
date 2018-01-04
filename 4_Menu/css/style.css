@@ -2,18 +2,19 @@ ul {
     padding: 0;
 }
 
-.nav ul {
+.menu {
     list-style: none;
     width: 100%;
 }
 
-.nav>ul>li {
+.menu > li {
     display: inline-block;
     position: relative;
 }
 
-.nav>ul>li>ul {
+.submenu {
     display: none;
     position: absolute;
+    list-style: none;
     width: 300px;
 }
