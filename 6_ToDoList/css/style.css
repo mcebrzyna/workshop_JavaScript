@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px; }
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #F9F7F1; }
+  body .tasks {
+    border: 2px dashed black;
+    border-radius: 20px;
+    width: 600px;
+    padding: 30px;
+    margin: 30px 0 0 0; }
+    body .tasks h1 {
+      margin: 0 0 10px 0;
+      font-size: 40px; }
+    body .tasks #addTask {
+      border: none;
+      background: none;
+      font-size: 40px;
+      height: 50px; }
+      body .tasks #addTask:focus {
+        outline: 0; }
+    body .tasks > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 20px 0; }
+      body .tasks > div #removeAll {
+        height: 40px;
+        padding: 0 30px;
+        background: #F9B543;
+        color: white;
+        border: none;
+        font-size: 20px; }
+        body .tasks > div #removeAll:focus {
+          outline: 0; }
+        body .tasks > div #removeAll:active {
+          background: #f7a212; }
+      body .tasks > div #counter {
+        margin: 0 10px 0 0; }
+
+#taskList {
+  padding: 0;
+  margin: 0;
+  width: 500px; }
+  #taskList li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px; }
+    #taskList li div {
+      width: 400px; }
+  #taskList .completeButton {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #676767;
+    border-radius: 50%;
+    background: none;
+    margin: 0 15px 0 0;
+    color: #676767; }
+    #taskList .completeButton:focus {
+      outline: 0; }
+  #taskList .completed div {
+    text-decoration: line-through;
+    color: grey; }
+  #taskList .deleteButton, #taskList .okButton {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 8px;
+    border: none;
+    color: white;
+    background-color: #FD5F63;
+    font-size: 20px; }
+  #taskList .okButton {
+    background: #3E9D50;
+    font-size: 16px;
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

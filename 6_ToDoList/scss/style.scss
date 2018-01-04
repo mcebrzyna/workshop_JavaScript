@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background: #F9F7F1;
+
+  .tasks{
+    border: 2px dashed black;
+    border-radius: 20px;
+    width: 600px;
+    padding: 30px;
+    margin: 30px 0 0 0;
+
+    h1{
+      margin: 0 0 10px 0;
+      font-size: 40px;
+    }
+    #addTask{
+      border: none;
+      background: none;
+      font-size: 40px;
+      height: 50px;
+      &:focus{outline: 0;}
+    }
+
+    > div{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 20px 0;
+
+      #removeAll{
+        height: 40px;
+        padding: 0 30px;
+        background: #F9B543;
+        color: white;
+        border: none;
+        font-size: 20px;
+        &:focus{outline: 0;}
+        &:active{background: darken(#F9B543, 10%)}
+      }
+      #counter{
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}
+
+//NEW OBJECT
+#taskList{
+  padding: 0;
+  margin: 0;
+  width: 500px;
+
+  li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+
+    div{
+      width: 400px;
+    }
+  }
+
+  .completeButton{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #676767;
+    border-radius: 50%;
+    background: none;
+    margin: 0 15px 0 0;
+    color: #676767;
+    &:focus{outline: 0;}
+  }
+
+  .completed div{
+    text-decoration: line-through;
+    color: grey;
+  }
+
+  .deleteButton{
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 8px;
+    border: none;
+    color: white;
+    background-color: #FD5F63;
+    font-size: 20px;
+  }
+
+  .okButton{
+    @extend .deleteButton;
+    background: #3E9D50;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
