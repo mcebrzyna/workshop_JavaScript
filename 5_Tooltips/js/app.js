@@ -1,8 +1,17 @@
-/**
- * Created by Jacek on 2015-12-16.
- */
+document.addEventListener('DOMContentLoaded', function () {
+    var tooltips = document.querySelectorAll('.tooltip');
+    var newSpan = document.createElement('span');
 
+    tooltips.forEach(function (tooltip) {
 
-/*
- <span class="tooltipText">Text tooltipa</span>
- */
+        tooltip.addEventListener('mouseover', function () {
+            newSpan.innerText = this.dataset.text;
+            newSpan.classList.add('tooltipText');
+            tooltip.appendChild(newSpan);
+        });
+        tooltip.addEventListener('mouseout', function () {
+            newSpan.remove();
+        });
+
+    });
+});
