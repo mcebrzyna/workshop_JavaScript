@@ -1,0 +1,24 @@
+.dragBox {
+    width: 100px;
+    height:100px;
+    background: rgba(34, 249, 79, 0.68);
+    border: 4px solid #1daf3c;
+    margin: 5px;
+    border-radius: 10px;
+    left: 0;
+    z-index: 1;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.drag{
+    background: none;
+    border: 4px dashed #1daf3c;
+}
+
+.dragContainer{
+    display: flex;
+    flex-direction: row;
+}
